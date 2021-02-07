@@ -1,31 +1,7 @@
 <!DOCTYPE html>
 <head>    
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <style>
-    #overlay {
-      position: fixed;
-      display: none;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background-color: rgba(0,0,0,0.5);
-      z-index: 1;
-      cursor: pointer;
-    }
-
-    #text{
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      font-size: 50px;
-      color: white;
-      transform: translate(-50%,-50%);
-      -ms-transform: translate(-50%,-50%);
-    }
-    </style>
+    
 
         <script>
             L_NO_TOUCH = false;
@@ -60,20 +36,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
 </head>
 <body onload="on()">
-    <div id="overlay" onclick="off()">
-      <div id="text">Overlay Text</div>
-    </div>    
+
     
             <div class="folium-map" id="map_3c73c46e290a46b5a9d6519fd81b754e" ></div>
         
 </body>
 <script>
 function on() {
-  document.getElementById("overlay").style.display = "block";;
+  alert("Data from Wikipedia Visa Requirements for Indian Citizens. Updated 7 Feb 2021. I take no responsibility for the accuracy and validity of information presented, do your own research before making decisions.);
 }
-function off() {
-  document.getElementById("overlay").style.display = "none";
-}
+
 </script>
 <script>
     
