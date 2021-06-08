@@ -43,7 +43,7 @@
 
 			<!-- Header -->
 				<header id="header" class="alt">
-					<h1 id="logo"><a href="index.html">Travel <span>for Indians</span></a></h1>
+					<h1 id="logo">Travel <span>for Indians</span></h1>
 					<nav id="nav">
 						<ul>
 						
@@ -64,13 +64,13 @@
             <div class="inner">
 
 						<header>
-							<h2>Visamap.in</h2>
+							<h2>Visafree.in</h2>
 						</header>
 						<p>For <strong> holiday inspiration </strong> 
 						<br /> and those
 						<br /> <strong> last-minute plans</strong>, 
 						<br />
-						a guide to where Indian ordinary passport holders can go						
+						a guide to entry requirements for ordinary Indian passport holders						
 						<br />
 						by <a href="https://www.linkedin.com/in/gtmagrwl/">Gautam Agarwal</a>.</p>
 						</header>
@@ -88,23 +88,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			<article id="main">
+			
+
+            <div class="folium-map" id="map_68a82f3690e9488fa5b64c5e840b7c9d" ></div>
+            <article id="main">
 
 					<header class="special container">
 						<span class="icon solid fa-plane-departure"></span>
-						<p> I love to travel, and whilst sometimes I have the luxury of time to plan out a destination and apply for visas, sometimes it's too late to do all that.
-						<br /> I needed a quick way to see where I could go whilst leveraging US/UK/EU/UAE visas one may have, and Visamap.in was born.
-						<br /> </p>							
+						<p> I love to travel. Whilst I sometimes have the luxury of time to plan out a destination and apply for visas, it's often too late to do all that.
+						<br /> Here's an engaging visualisation to entry requirements, making it easy for Indians to travel with visa on arrivals, eVisas and more. It's worth noting that having a US/UK/EU/UAE visa may open access to significant other countries, and this information has largely been included for your convenience.
+						<br />  Things have improved quickly over the years, with half a dozen countries opening up to us for tourism in the last three years. Let's hope this trend continues!
+						</p>							
 						<p>Data from <a href="https://en.wikipedia.org/wiki/Visa_requirements_for_Indian_citizens"> Wikipedia Visa Requirements for Indian Citizens </a>.
 						<br /> Updated 8th June 2021. Use this as a guide but ensure you review the information presented independently before making decisions.
 						<br />
 						Please <a href="https://www.paypal.com/donate?hosted_button_id=ZR49XY9WWUTJC">donate</a> so I can cover hosting and domain name registration and development.
 						</p>
-						<h3><a href="in_map2.html">FULLSCREEN</a></h3>
+						<p><a href="in_map2.html">FULLSCREEN</a></p>
 						</header>
         </article>
-
-            <div class="folium-map" id="map_68a82f3690e9488fa5b64c5e840b7c9d" ></div>
 
 </body>
 <script>    
@@ -115,6 +117,7 @@
                     center: [20.5937, 78.9629],
                     crs: L.CRS.EPSG3857,
                     zoom: 3,
+                    
                     zoomControl: true,
                     preferCanvas: false,
                 }
